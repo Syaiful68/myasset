@@ -1,6 +1,9 @@
 <template>
   <div class="page-body">
     <div class="container-xl">
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Add</button>
+      </div>
       <div class="row row-deck row-cards">
         <div class="col-sm-6 col-lg-3">
           <div class="card">
@@ -25,6 +28,4 @@
       </div>
     </div>
   </div>
-
-
 </template>
