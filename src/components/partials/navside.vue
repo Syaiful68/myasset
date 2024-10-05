@@ -238,8 +238,8 @@ import { RouterLink } from 'vue-router';
                             </span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <RouterLink class="nav-link" :class="{ 'active': path = '/asset' }" to="/asset">
+                    <li class="nav-item" :class="{ 'active ': 'router-link-active' }">
+                        <RouterLink class="nav-link" :class="{ 'active': 'router-link-active' }" to="/asset">
                             <span
                                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
