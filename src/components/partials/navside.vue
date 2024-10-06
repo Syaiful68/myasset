@@ -220,8 +220,8 @@ import { RouterLink } from 'vue-router';
             </div>
             <div class="collapse navbar-collapse" id="sidebar-menu">
                 <ul class="navbar-nav pt-lg-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">
+                    <li class="nav-item" :class="{ 'active': $route.name === 'home' }">
+                        <RouterLink class="nav-link" to="/">
                             <span
                                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -236,10 +236,10 @@ import { RouterLink } from 'vue-router';
                             <span class="nav-link-title">
                                 Home
                             </span>
-                        </a>
+                        </RouterLink />
                     </li>
-                    <li class="nav-item" :class="{ 'active ': 'router-link-active' }">
-                        <RouterLink class="nav-link" :class="{ 'active': 'router-link-active' }" to="/asset">
+                    <li class="nav-item" :class="{ 'active': $route.name === 'asset' }">
+                        <RouterLink class="nav-link" to="/asset">
                             <span
                                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

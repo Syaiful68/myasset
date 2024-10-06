@@ -15,7 +15,8 @@ const router = createRouter({
       name:'asset',
       component: AssetView
     }
-  ]
+  ],
+  linkActiveClass:'active'
 })
 
 export default router
