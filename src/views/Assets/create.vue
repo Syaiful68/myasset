@@ -1,18 +1,11 @@
 <script setup>
 import appbar from '@/components/partials/app.vue';
-import { RouterLink } from 'vue-router';
 </script>
 
-
 <template>
-    <appbar title="Assets" pages="/Assets" />
+    <appbar />
     <div class="page-body">
         <div class="container-xl">
-            <div class="mb-3">
-                <RouterLink to="/asset/create" class="btn btn-primary">
-                    Add
-                </RouterLink>
-            </div>
             <div class="row row-deck row-cards">
                 <div class="col-sm-6 col-lg-3">
                     <div class="card">

@@ -8,7 +8,7 @@ import appbar from './components/partials/app.vue';
   <div class="pages">
     <navside />
     <div class="page-wrapper">
-      <appbar />
+      <!-- <appbar /> -->
       <RouterView />
     </div>
   </div>
